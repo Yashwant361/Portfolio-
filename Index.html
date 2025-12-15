@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashwant - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div class="left">Yash's Portfolio </div>
+                <!-- <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">
+                    <span id="themeIcon">Light</span>
+                </button> -->
+            </div>
+            <div class="left">
+                <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">
+                    <span id="themeIcon">Light</span>
+                </button>
+            </div>
+            <!-- <div class="left">Yash's Portfolio</div> -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="right">
+                <ul id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Yashwant</span>
+                <div>and I am a passionate</div>
+                <div>
+                    <span id="element"></span>
+                </div>
+                <div class="buttons">
+                    <button onclick="window.location.href='#projects'">View Projects</button>
+                    <button onclick="window.location.href='#contact'">Hire Me</button>
+                    <button onclick="downloadCv()">Download CV</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="/yash.png" alt="Profile Picture">
+            </div>
+        </section>
+
+        <section class="secondSection" id="about">
+            <h1>About <span class="purple">Me</span></h1>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate fresher web developer with a strong foundation in modern web technologies. I
+                        love creating beautiful, functional websites and applications that solve real-world problems.
+                    </p>
+                    <p>As a quick learner and dedicated developer, I'm always excited to take on new challenges and
+                        contribute to innovative projects. My goal is to grow as a developer while delivering
+                        high-quality solutions.</p>
+                </div>
+                <div class="skills">
+                    <div class="skill-item">
+                        <h3>HTML & CSS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>React</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Node.js</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="thirdSection" id="projects">
+            <h1>My <span class="purple">Projects</span></h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-Commerce Website</h3>
+                    <p>A fully responsive e-commerce platform with product listings, cart functionality, and checkout
+                        process.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="#">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Weather App</h3>
+                    <p>Real-time weather application that fetches data from API and displays current weather conditions
+                        for any city.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>API</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href="#">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>Personal portfolio website showcasing my projects, skills, and contact information with modern
+                        design.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="#">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Task Manager</h3>
+                    <p>A productivity app for managing daily tasks with features like add, edit, delete, and mark as
+                        complete.</p>
+                    <div class="tech-stack">
+                        <span>JavaScript</span>
+                        <span>Local Storage</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href="#">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Clinic Site</h3>
+                    <p>AarogyaCare is a responsive clinic website designed to streamline patient interaction and
+                        appointment management.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>UI/UX Fundamentals</span>
+                    </div>
+                    <a href="#">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Blog Platform</h3>
+                    <p>A simple blogging platform where users can read articles on various topics with clean interface.
+                    </p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href="#">View Project →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="fourthSection" id="contact">
+            <h1>Contact <span class="purple">Me</span></h1>
+            <div class="contact-container" style="justify-content: center;">
+                <div class="contact-info" style="text-align: center; max-width: 600px;">
+                    <h3>Get in Touch</h3>
+                    <p>I'm currently looking for opportunities as a fresher developer. Feel free to reach out if you'd
+                        like to discuss projects or job opportunities!</p>
+                    <div class="contact-item" style="justify-content: center;">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <div>
+                            <strong>Email</strong><br>
+                            <a href="mailto:yashwantray57@gmail.com"
+                                style="color: rgb(170, 107, 228); text-decoration: none; font-size: 1.1rem;">yashwantray57@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" style="justify-content: center;">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <div>
+                            <strong>Phone</strong><br>
+                            <a href="tel:+919570918673"
+                                style="color: rgb(170, 107, 228); text-decoration: none;">+919570918673</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item" style="justify-content: center;">
+                        <span>
+                            <div class="social-links">
+                                <a href="https://github.com/Yashwant361" title="GitHub"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="www.linkedin.com/in/yashwant-ray-510146214" title="LinkedIn"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="contact-item" style="justify-content: center;">
+                        <span>📍</span>
+                        <div>
+                            <strong>Location</strong><br>
+                            Bangalore, India
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <p>&copy; 2025. All rights reserved. Developed and Maintain by RayCrop Inc</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</body>
+
+
+</html>
