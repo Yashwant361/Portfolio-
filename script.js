@@ -3,10 +3,10 @@
 
 
 
-function downloadCv() {
-    base_url = 'https://drive.google.com/file/d/1oU78Yn-GnHRrhSxGqLtEdsEwg8KwYebH/view?usp=sharing'
-    window.open(base_url, '_blank')
-}
+// function downloadCv() {
+//     base_url = 'https://drive.google.com/file/d/1oU78Yn-GnHRrhSxGqLtEdsEwg8KwYebH/view?usp=sharing'
+//     window.open(base_url, '_blank')
+// }
 
 
 
