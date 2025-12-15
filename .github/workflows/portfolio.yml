@@ -1,0 +1,22 @@
+name: Deploy Portfolio 
+
+on:
+  push:
+    branches: [main]   # jab bhi main branch pe push ho
+
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
+
+# concurrency:
+#   group: "pages"
+#   cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        run : echo 'Hello....'
